@@ -164,7 +164,7 @@ roslaunch gazebo_tutorials navigate_with_map.launch
 </div>
 
 
-tf变化树
+tf变换树
 <div align="center">
   <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/tf1.png">
 </div>
