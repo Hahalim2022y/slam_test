@@ -4,7 +4,7 @@
 
 ##### 1、前提条件：本文使用环境为Ubuntu18.04+ROS-melodic ，需要自己建立一个工作空间，src功能包如下
 
-<img src="https://github.com/Hahalim2022y/slam_test/图片/工作空间.png" alt="工作空间" style="zoom: 80%;" />
+<img src="[https://github.com/Hahalim2022y/slam_test/图片/工作空间.png](https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4.png)" alt="工作空间" style="zoom: 80%;" />
 
 ##### 2、下载turtlebot3机器人模型  
 
