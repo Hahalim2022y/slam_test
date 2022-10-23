@@ -8,7 +8,6 @@
 </div>
 
 
-<img src="[https://github.com/Hahalim2022y/slam_test/图片/工作空间.png](https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4.png)" alt="工作空间" style="zoom: 80%;" />
 
 ##### 2、下载turtlebot3机器人模型  
 
@@ -103,8 +102,10 @@ roslaunch gazebo_tutorials create_world.launch
 ```
 roslaunch gazebo_tutorials place_robot.launch
 ```
+<div align="center">
+  <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E4%BB%BF%E7%9C%9F1.png">
+</div>
 
-<img src="C:\Users\庞昀懿\Desktop\robomaster\图片\仿真1.png" alt="仿真1" style="zoom:80%;" />
 
 ###### 6.3、使用gmapping
 
@@ -127,7 +128,10 @@ rviz
 在终端运行`rviz`，点击左下角add，在by topic中找到map添加进去，即可看到构建的地图，rviz也可以保存配置，这里先不保存，等后面多台机器人的时候再详细讲，包括坐标的显示、坐标系的选择等。
 fixed_frame选择为tb3_0/map，即将世界坐标系设置为地图坐标
 
-<img src="C:\Users\庞昀懿\Desktop\robomaster\图片\仿真2.png" alt="仿真2" style="zoom:80%;" />
+<div align="center">
+  <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E4%BB%BF%E7%9C%9F2.png">
+</div>
+
 
 ###### 6.6、保存地图
 
@@ -147,16 +151,22 @@ roslaunch gazebo_tutorials navigate_with_map.launch
 
 2d Nav Goal就是发布希望机器人的目标地点，同样需要修改右上角topic来选定导航的机器人。
 
-
-<img src="C:\Users\庞昀懿\Desktop\robomaster\图片\仿真3.png" alt="仿真3" style="zoom:80%;" />
+<div align="center">
+  <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E4%BB%BF%E7%9C%9F3.png">
+</div>
 
 ###### 6.8、rqt_graph和tf
 
 我们可以看到，是gazebo这个环境直接给gmapping节点提供了scan这个雷达数据的topic
 
-![节点1](C:\Users\庞昀懿\Desktop\robomaster\图片\节点1.png)
+<div align="center">
+  <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E8%8A%82%E7%82%B91.png">
+</div>
+
 
 tf变化树
+<div align="center">
+  <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/tf1.png">
+</div>
 
-<img src="C:\Users\庞昀懿\Desktop\robomaster\图片\tf1.png" alt="tf1"  />
 
