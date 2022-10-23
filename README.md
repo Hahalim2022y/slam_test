@@ -147,7 +147,7 @@ ROS_NAMESPACE=tb3_0 rosrun map_server map_saver -f ~/slam_test/src/gazebo_tutori
 roslaunch gazebo_tutorials navigate_with_map.launch
 ```
 
-2d pos estimate在这里不需要使用，因为我们的初始位置是我们自己设定的，基本是准确的。但是如果在使用中，我们可能会把机器人摆歪，那么激光雷达的扫描结果就和地图边缘不匹配，这时候就要使用这个工具调整位姿。发布位姿的时候要使用右上角的tool properties，这个在吗默认的rviz中是不会显示的，需要手动添加。然后目前的topic是没有命名空间的情况下，所以要在前面加上**`tb3_0/ `**代表是第一台机器人位姿估计。
+2d pos estimate在这里不需要使用，因为我们的初始位置是我们自己设定的，基本是准确的。但是如果在使用中，我们可能会把机器人摆歪，那么激光雷达的扫描结果就和地图边缘不匹配，这时候就要使用这个工具调整位姿。发布位姿的时候要使用右上角的tool properties，这个在吗默认的rviz中是不会显示的，需要手动添加。然后目前的topic是没有命名空间的情况下，所以要在前面加上`tb3_0/ `代表是第一台机器人位姿估计。
 
 2d Nav Goal就是发布希望机器人的目标地点，同样需要修改右上角topic来选定导航的机器人。
 
@@ -157,7 +157,7 @@ roslaunch gazebo_tutorials navigate_with_map.launch
 
 ###### 6.8、rqt_graph和tf
 
-我们可以看到，是gazebo这个环境直接给gmapping节点提供了scan这个雷达数据的topic
+可以看到，是gazebo这个环境直接给gmapping节点提供了scan这个雷达数据的topic
 
 <div align="center">
   <img src="https://github.com/Hahalim2022y/slam_test/blob/main/%E5%9B%BE%E7%89%87/%E8%8A%82%E7%82%B91.png">
